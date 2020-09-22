@@ -6,6 +6,7 @@ import { LocationListComponent } from './components/location-list/location-list.
 const routes: Routes = [
   { path: 'characters', component: CharacterListComponent },
   { path: 'locations', component: LocationListComponent },
+  { path: '', redirectTo: 'characters', pathMatch: 'full' },
 ];
 
 @NgModule({
