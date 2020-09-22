@@ -8,6 +8,7 @@ import { CharacterListComponent } from './components/character-list/character-li
 import { CharacterItemComponent } from './components/character-item/character-item.component';
 import { LocationListComponent } from './components/location-list/location-list.component';
 import { NavMenuComponent } from './components/nav-menu/nav-menu.component';
+import { LocationItemComponent } from './components/location-item/location-item.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { NavMenuComponent } from './components/nav-menu/nav-menu.component';
     CharacterListComponent,
     CharacterItemComponent,
     LocationListComponent,
-    NavMenuComponent
+    NavMenuComponent,
+    LocationItemComponent
   ],
   imports: [
     BrowserModule,
