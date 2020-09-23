@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 import { CharacterResponse } from 'src/app/models/character-response.interface';
 import { Character } from 'src/app/models/character.model';
-import { CharacterService } from '../../services/character.service';
+import { CharacterService } from '../../character.service';
 
 @Component({
   selector: 'app-character-list',
