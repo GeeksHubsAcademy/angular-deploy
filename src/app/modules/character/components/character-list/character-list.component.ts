@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { AfterContentInit, AfterViewInit, Component, DoCheck, OnChanges, OnDestroy, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 import { CharacterResponse } from 'src/app/models/character-response.interface';
 import { Character } from 'src/app/models/character.model';
@@ -12,9 +12,11 @@ import { CharacterService } from '../../character.service';
 export class CharacterListComponent implements OnInit {
   characters$: Observable<CharacterResponse>;
 
-  constructor(private characterService: CharacterService) {}
+  constructor(private characterService: CharacterService) { }
+
 
   ngOnInit(): void {
+    console.log('onInit');
     this.characters$ = this.characterService.getCharacters();
   }
 }
